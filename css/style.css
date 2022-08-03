@@ -1,65 +1,81 @@
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-ol,ul,li{
+ol, ul, li {
     list-style: none;
 }
 
-a,a:hover{
+a, a:hover {
     text-decoration: none;
 }
 
-body{
-    font-family: 'Poppins',sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 
 
-.container{
-    max-width: 1230px;
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col-3 {
+    width: 32.0%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.container {
+    max-width: 1240px;
     margin: 0 auto;
 }
 
 /*HEADER*/
 
-#header{
+#header {
     width: 100%;
     padding: 22px 0;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header__logo{
+.header__logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 51px;
+    margin-left: 52px;
 }
 
-.header__logo__img{
+.header__logo__img {
 
 }
 
-.header__nav{
+.header__nav {
+    margin-right: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .header__nav__list {
-    margin-right: 32.5px;
+    margin-right: 33px;
 }
 
-.header__nav__list__item{
-    font-family: 'Poppins',sans-serif;
+.header__nav__list__item {
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -67,7 +83,7 @@ body{
     color: #000000;
 }
 
-.header__nav__list__btn{
+.header__nav__list__btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +91,7 @@ body{
     background: #000000;
     border-radius: 14px;
     border: none;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -84,11 +100,11 @@ body{
     color: #FFFFFF;
 }
 
-.header__burger{
+.header__burger {
     display: none;
 }
 
-.header__burger__menu{
+.header__burger__menu {
     position: relative;
     margin-right: 50px;
     width: 20px;
@@ -96,7 +112,7 @@ body{
     background: #000000;
 }
 
-.header__burger__menu::before{
+.header__burger__menu::before {
     content: '';
     position: absolute;
     margin: -6px 0;
@@ -105,7 +121,7 @@ body{
     background: #000000;
 }
 
-.header__burger__menu::after{
+.header__burger__menu::after {
     content: '';
     position: absolute;
     margin: 6px 0;
@@ -117,33 +133,32 @@ body{
 /*HEADER*/
 
 
-
 /*HERO*/
 
-#hero{
+#hero {
     position: relative;
     min-height: 720px;
     background: #ECE7E4;
 }
 
-#hero::before{
+#hero::before {
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
-    left: 50.4%;
-    background: url("../img/heroimg.png") 0 0  no-repeat;
+    left: 50%;
+    background: url("../img/heroimg.png") 0 0 no-repeat;
 }
 
 
-.hero__info{
+.hero__info {
     padding-top: 135.5px;
     width: 600px;
 }
 
-.hero__info__name{
-    font-family: 'Poppins',sans-serif;
+.hero__info__name {
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -153,9 +168,9 @@ body{
     color: #000000;
 }
 
-.hero__info__title{
+.hero__info__title {
     margin: 21px 0;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
@@ -163,9 +178,9 @@ body{
     color: #000000;
 }
 
-.hero__info__subtitle{
+.hero__info__subtitle {
     width: 509px;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -173,14 +188,14 @@ body{
     color: #000000;
 }
 
-.hero__info__btn{
+.hero__info__btn {
     margin-top: 30px;
     margin-left: 4px;
     padding: 10px 33px;
     border: 1px solid #000000;
     border-radius: 14px;
     background: transparent;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -199,17 +214,17 @@ body{
     padding: 97px 226px;
 }
 
-.about__info{
+.about__info {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 768px;
+    width: 770px;
     height: 582px;
 }
 
-.about__info__title{
+.about__info__title {
     padding-left: 10px;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -217,14 +232,14 @@ body{
     color: #000000;
 }
 
-.about__info__items{
+.about__info__items {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.about__info__items__subtitle{
+.about__info__items__subtitle {
     margin: 5px 0;
     width: 493px;
     font-style: normal;
@@ -235,19 +250,19 @@ body{
     color: #000000;
 }
 
-.about__info__items__author{
+.about__info__items__author {
     margin: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.about__info__items__author__info{
+.about__info__items__author__info {
     margin: 0 31px;
 }
 
-.about__info__items__author__info__name{
-    font-family: 'Poppins',sans-serif;
+.about__info__items__author__info__name {
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -257,8 +272,8 @@ body{
 }
 
 
-.about__info__items__author__info__major{
-    font-family: 'Poppins',sans-serif;
+.about__info__items__author__info__major {
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -272,24 +287,24 @@ body{
 
 /*READING*/
 
-#reading{
+#reading {
     margin: 5.5px 0;
     height: 600px;
     background: url("../img/reading.png") no-repeat center/cover;
 }
 
-.reading{
+.reading {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
 }
 
-.reading__info{
-    margin: 266px -35px;
+.reading__info {
+    margin: 267px -25px
 }
 
-.reading__info__title{
+.reading__info__title {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -299,9 +314,9 @@ body{
     text-transform: uppercase;
 }
 
-.reading__info__title__subtitle{
+.reading__info__title__subtitle {
     width: 285px;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -312,25 +327,236 @@ body{
 
 /*READING*/
 
+/*PROJECTS*/
+
+#projects {
+    margin: 5.5px 0;
+    height: 570px;
+}
+
+.projects {
+    margin: 0 auto;
+}
+
+.projects__processes {
+    padding-top: 95px;
+    margin-left: 2px;
+    text-align: center;
+}
+
+.projects__services__img {
+    margin: 0 20px;
+}
+
+
+.projects__processes__title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.projects__processes__subtitle {
+    margin: 14px 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.projects__services {
+    height: 259px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.projects__services__title {
+    margin-top: 9px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.projects__services__subtitle {
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #717171;
+}
+
+/*PROJECTS*/
+
+
+/*STAIR*/
+
+#stair {
+    height: 600px;
+    background: url("../img/stair.png") no-repeat center/cover;
+}
+
+.stair {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.stair__info {
+    margin: 267px -25px
+}
+
+.stair__info__title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.stair__info__subtitle {
+    width: 285px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+
+/*STAIR*/
+
+
+/*CLIENTS*/
+
+#clients {
+    height: 410px;
+    background: #000000;
+}
+
+.clients {
+    padding: 100px 0;
+
+}
+
+.clients__info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.clients__info__happiness {
+    margin: 0 85px;
+    width: 460px;
+}
+
+.clients__info__happiness__title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #ECE7E4;
+}
+
+.clients__info__happiness__main {
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #FFFFFF;
+}
+
+.clients__info__happiness__subtitle {
+    width: 451px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+
+    color: #ECE7E4;
+
+}
+
+.clients__info__icons{
+    width: 439px;
+    margin-left: 88px;
+
+}
+
+
+.clients__info__icons__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clients__info__icons__items__item{
+    margin-top: 39px;
+}
+
+/*CLIENTS*/
+
 
 /*MEDIA*/
 
-@media only screen and (max-width: 1305px){
-    .container{
+@media only screen and (max-width: 1305px) {
+    .container {
         max-width: 1205px;
     }
 
+    /*READING*/
     .reading__info {
         margin: 266px 0;
     }
+
+    /*READING*/
+    /*STAIR*/
+    .stair__info {
+        margin: 266px 0;
+    }
+
+    /*STAIR*/
+
 }
 
-@media (max-width: 1200px){
-    .container{
+@media (max-width: 1200px) {
+    .container {
         max-width: 1025px;
     }
-/*HERO*/
 
+    /*HERO*/
     #hero::before {
         inset: 0 0 0 50%;
     }
@@ -341,14 +567,11 @@ body{
     }
 
     .hero__info__subtitle {
-         width: auto;
+        width: auto;
     }
 
     /*HERO*/
-
-
     /*ABOUT*/
-
     .about {
         padding: 97px 100px;
     }
@@ -383,35 +606,37 @@ body{
         transition: 0.3s;
         z-index: 10;
     }
-    .header__nav__list{
+
+    .header__nav__list {
         margin: 20px 0;
     }
 
-    .header__nav__list__item{
+    .header__nav__list__item {
         font-size: 22px;
     }
 
-    .header__nav.active{
+    .header__nav.active {
         left: 50%;
 
     }
 
-    .header__burger{
+    .header__burger {
         display: block;
     }
-    .header__burger.close .header__burger__menu{
-        transform: translateY(2px)  rotate(50deg);
+
+    .header__burger.close .header__burger__menu {
+        transform: translateY(2px) rotate(50deg);
     }
 
-    .header__burger.close .header__burger__menu:before{
+    .header__burger.close .header__burger__menu:before {
         opacity: 0;
     }
-    .header__burger.close .header__burger__menu:after{
-        transform: translateY(-6px)  rotate(-100deg);
+
+    .header__burger.close .header__burger__menu:after {
+        transform: translateY(-6px) rotate(-100deg);
     }
 
     /*HERO*/
-
     #hero::before {
         inset: 0 0 0 50%;
     }
@@ -430,34 +655,55 @@ body{
     }
 
     /*HERO*/
-
-
     /*ABOUT*/
-
     .about {
         padding: 97px 20px;
     }
 
     /*ABOUT*/
-
     /*READING*/
-
     .reading__info {
         margin: 100px 0;
     }
 
     /*READING*/
+    /*PROJECTS*/
+    #projects {
+        height: auto;
+    }
+
+    .columns {
+        display: block;
+    }
+
+    .projects__services {
+        height: auto;
+    }
+
+    .projects__services {
+        margin: 52px 50%;
+        width: 500px;
+        height: 259px;
+        text-align: center;
+    }
+
+    /*PROJECTS*/
+    /*STAIR*/
+    .stair__info {
+        margin: 100px 0;
+    }
+
+    /*STAIR*/
 }
 
-@media only screen and (max-width: 820px){
+@media only screen and (max-width: 820px) {
 
-    .container{
+    .container {
         max-width: 775px;
     }
 
 
     /*HERO*/
-
     .hero__info {
         padding-top: 80.5px;
         width: 300px;
@@ -469,10 +715,7 @@ body{
     }
 
     /*HERO*/
-
-
     /*ABOUT*/
-
     .about__info {
         width: 720px;
     }
@@ -486,7 +729,6 @@ body{
     }
 
     /*HERO*/
-
     .hero__info {
         padding-left: 15px;
     }
@@ -499,15 +741,14 @@ body{
         font-size: 30px;
         line-height: 40px;
     }
+
     .hero__info {
         padding-top: 80.5px;
         width: 40%;
     }
 
     /*HERO*/
-
     /*ABOUT*/
-
     .about__info {
         width: auto;
         text-align: center;
@@ -530,6 +771,12 @@ body{
         margin: 20px 0;
     }
 
+    /*PROJECTS*/
+    .projects__services {
+        margin: 52px 25%;
+    }
+
+    /*PROJECTS*/
     /*ABOUT*/
 }
 
@@ -537,13 +784,13 @@ body{
     .container {
         max-width: 490px;
     }
+
     .hero__info {
         padding-top: 120px;
         padding-left: 10px;
     }
 
     /*ABOUT*/
-
     .about__info__items__subtitle {
         margin: 10px 0;
         width: auto;
@@ -551,6 +798,13 @@ body{
     }
 
     /*ABOUT*/
+    /*PROJECTS*/
+    .projects__services {
+        width: 400px;
+        margin: 52px 22%;
+    }
+
+    /*PROJECTS*/
 }
 
 @media only screen and (max-width: 480px) {
@@ -590,6 +844,7 @@ body{
         font-size: 20px;
         line-height: 27px;
     }
+
     .hero__info__subtitle {
         font-size: 11px;
     }
@@ -600,12 +855,9 @@ body{
     }
 
     /*HERO*/
-
-
     /*ABOUT*/
-
     .about__info {
-         height: auto;
+        height: auto;
     }
 
     .about {
@@ -613,6 +865,13 @@ body{
     }
 
     /*ABOUT*/
+    /*PROJECTS*/
+    .projects__services {
+        width: 300px;
+        margin: 52px 0;
+    }
+
+    /*PROJECTS*/
 }
 
 /*MEDIA*/
