@@ -698,6 +698,108 @@ body {
 
 /*FEATURED*/
 
+/*TEAM*/
+
+
+.team {
+    padding: 82px 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.team__info {
+    margin: 14px 0;
+    width: 378.66px;
+}
+
+
+.team__info__title{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
+}
+
+
+.team__members__info__person{
+    margin-left: 31px;
+}
+
+
+.team__info__subtitle{
+    width: 375px;
+    margin: 14px 0;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+.team__info__subtitle__btn{
+    padding: 10.9px 37px;
+    margin: 15px 0;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.4px;
+
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 14px;
+}
+
+.team__members__info {
+    padding: 26px 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+
+.team__members {
+    width:773.33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    flex-wrap: wrap;
+}
+
+.team__members__info {
+    width: 50%;
+}
+
+.team__members__info__person__title{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+
+    color: #000000;
+}
+
+.team__members__info__person__subtitle{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+
+    color: #000000;
+}
+
+/*TEAM*/
+
 /*MEDIA*/
 
 @media only screen and (max-width: 1305px) {
