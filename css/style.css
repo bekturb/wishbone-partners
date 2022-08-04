@@ -459,11 +459,11 @@ body {
 }
 
 .clients {
-    padding: 100px 0;
-
+    padding: 53px 0
 }
 
 .clients__info {
+    height: 302px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -512,14 +512,18 @@ body {
 .clients__info__icons{
     width: 439px;
     margin-left: 88px;
-
+    height: 284px;
 }
+
 
 
 .clients__info__icons__items{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.item2{
+    padding-top: 48px;
 }
 
 .clients__info__icons__items__item{
@@ -528,6 +532,162 @@ body {
 
 /*CLIENTS*/
 
+
+/*STAIRCASE   */
+
+#staircase {
+    height: 600px;
+    background: url("../img/staircase.png") no-repeat center/cover;
+}
+
+
+.staircase__info {
+    position: absolute;
+    margin: 267px 81px;
+}
+
+.staircase__info__title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.staircase__info__subtitle {
+    width: 285px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+/*STAIRCASE   */
+
+/*FEATURED*/
+
+
+.featured__info{
+    width: 653px;
+}
+
+.featured__info__title{
+    margin-left: 36px;
+    margin-top: 115px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.featured__info__subtitle{
+    margin: 13px 36px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #000000;
+}
+
+
+
+
+.featured__card__image__img{
+    margin: 31px 13px;
+}
+
+
+.featured__card__image {
+    position: absolute;
+}
+
+.featured__card__contents {
+    position: absolute;
+    visibility: hidden;
+    transition: transform .5s;
+}
+
+
+.featured__card:hover .featured__card__contents {
+    visibility: visible;
+    transition: .5s;
+    display: block;
+}
+
+
+
+.featured__card__contents__info__subtitle{
+    margin-top: 71px;
+    margin-left: 51.6px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.featured__card__contents__info__title{
+    margin-left: 52px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 30px;
+
+    color: #403E3B;
+}
+
+
+.featured__card__contents__btn{
+    padding: 10px 20px;
+    margin-left: 55px;
+    margin-top: 279px;
+    background: #000000;
+    border-radius: 14px;
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+
+    color: #FFFFFF;
+
+}
+
+.featured__button__btn{
+    position: absolute;
+    padding: 10px 45px;
+    margin-left: 537px;
+    margin-top: 529px;
+    border: 1px solid #000000;
+    border-radius: 14px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.4px;
+
+    color: #000000;
+}
+
+/*FEATURED*/
 
 /*MEDIA*/
 
@@ -575,16 +735,46 @@ body {
     .about {
         padding: 97px 100px;
     }
-
-
     /*ABOUT*/
+
+    /*CLIENTS*/
+
+    .clients__info__icons {
+        width: 361px;
+        margin-left: 0;
+        height: 284px;
+    }
+
+    /*CLIENTS*/
 }
+
 
 @media only screen and (max-width: 1024px) {
 
     .container {
         max-width: 995px;
     }
+
+    /*CLIENTS*/
+
+    .item2 {
+        padding-top: 0;
+    }
+
+    .clients__info__icons {
+        margin: 0 auto;
+        height: inherit;
+    }
+
+    .clients__info__happiness {
+        margin: 0 auto;
+        width: 460px;
+        /*text-align: center;*/
+    }
+
+    .clients__info__happiness__subtitle {
+        width: 361px;    }
+    /*CLIENTS*/
 }
 
 @media only screen and (max-width: 992px) {
@@ -694,6 +884,26 @@ body {
     }
 
     /*STAIR*/
+
+
+    /*CLIENTS*/
+
+    .clients__info__icons {
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .clients__info__icons__items__item {
+        margin-top: 17px;
+    }
+    .clients__info__happiness__subtitle {
+         width: auto;
+    }
+    .clients__info__happiness {
+         text-align: center;
+    }
+
+    /*CLIENTS*/
 }
 
 @media only screen and (max-width: 820px) {
@@ -721,7 +931,16 @@ body {
     }
 
     /*ABOUT*/
+
+    /*STAIRCASE*/
+    .staircase__info {
+        position: absolute;
+        margin: 100px 81px;
+    }
+
+    /*STAIRCASE*/
 }
+
 
 @media only screen and (max-width: 770px) {
     .container {
@@ -872,6 +1091,41 @@ body {
     }
 
     /*PROJECTS*/
+
+
+    /*CLIENTS*/
+
+    #clients {
+        height: 480px;
+        background: #000000;
+    }
+
+    .clients__info__happiness__main {
+        font-size: 25px;
+    }
+
+    .clients__info__happiness__subtitle {
+        font-size: 13px;
+    }
+
+    .clients__info__icons__items {
+         display: block;
+    }
+
+    .clients__info__icons {
+        margin: 0 108px;
+        height: auto;
+    }
+
+    /*CLIENTS*/
+
+
+    /*STAIRCASE*/
+    .staircase__info {
+        position: absolute;
+        margin: 100px auto;
+    }
+    /*STAIRCASE*/
 }
 
 /*MEDIA*/
