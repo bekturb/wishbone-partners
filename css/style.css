@@ -755,6 +755,25 @@ body {
     }
 
     /*CLIENTS*/
+
+    /*FEATURED*/
+
+    .featured__card__image__img {
+        width: 300px;
+        margin: 274px 13px;
+    }
+
+
+    .featured__card__contents__btn {
+        margin-top: 210px;
+    }
+
+    .featured__button__btn {
+        margin-left: 444px;
+        margin-top: 736px;
+    }
+
+            /*FEATURED*/
 }
 
 
@@ -805,7 +824,7 @@ body {
 
     .featured__button__btn {
         margin-left: 438px;
-        margin-top: 444px;
+        margin-top: 700px;
     }
     /*FEATURES*/
 }
@@ -940,6 +959,11 @@ body {
 
     /*FEATURED*/
 
+    #featured {
+        height: 818px;
+        background: #F7F7F7;
+    }
+
     .featured__card__image__img {
         width: 230px;
     }
@@ -960,7 +984,6 @@ body {
     .featured__button__btn {
         padding: 7px 37px;
         margin-left: 334px;
-        margin-top: 361px;
     }
 
     /*FEATURED*/
@@ -1061,6 +1084,11 @@ body {
 
     /*FEATURED*/
 
+    #featured {
+        height: 718px;
+        background: #F7F7F7;
+    }
+
     .featured__info {
          width: auto;
     }
@@ -1099,7 +1127,7 @@ body {
     .featured__button__btn {
         padding: 4px 22px;
         margin-left: 249px;
-        margin-top: 269px;
+        margin-top: 569px;
     }
 
     /*FEATURED*/
@@ -1134,6 +1162,11 @@ body {
 
     /*FEATURED*/
 
+    #featured {
+        height: 618px;
+    }
+
+
     .featured__card__image__img {
         width: 137px;
     }
@@ -1158,9 +1191,8 @@ body {
     .featured__button__btn {
         padding: 4px 15px;
         margin-left: 194px;
-        margin-top: 234px;
+        margin-top: 500px;
         font-size: 11px;
-
     }
 
 
@@ -1270,6 +1302,11 @@ body {
 
     /*FEATURED*/
 
+    #featured {
+        background: #FFFFFF;
+        height: 1200px;
+    }
+
     .featured--row{
         display: block;
     }
@@ -1287,6 +1324,16 @@ body {
         margin-left: 75.6px;
     }
 
+    .featured__info__title {
+        position: initial;
+    }
+
+
+    .featured__info__subtitle {
+        width: 284px;
+        margin: 20px 36px;
+        position: initial;
+    }
 
     .featured__card__contents__btn {
         margin-top: 89px;
