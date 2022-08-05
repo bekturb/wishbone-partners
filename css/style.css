@@ -701,6 +701,9 @@ body {
 /*TEAM*/
 
 
+
+
+
 .team {
     padding: 82px 36px;
     display: flex;
@@ -1238,38 +1241,39 @@ body {
     }
 
     .featured__info__subtitle {
-        font-size: 16px;
-    }
+         width: auto;
+    font-size: 16px;
+}
 
-    .featured__card__image__img {
-        width: 164px;
-    }
+.featured__card__image__img {
+    width: 164px;
+}
 
-    .featured__card__contents__info__subtitle {
-        margin-left: 29.6px;
-    }
+.featured__card__contents__info__subtitle {
+    margin-left: 29.6px;
+}
 
-    .featured__card__contents__info__title {
-        margin-left: 29.6px;
-        font-size: 15px;
+.featured__card__contents__info__title {
+    margin-left: 29.6px;
+    font-size: 15px;
 
-    }
+}
 
 
-    .featured__card__contents__btn {
-        margin-top: 58px;
-        padding: 5px 8px;
-        margin-left: 28px;
+.featured__card__contents__btn {
+    margin-top: 58px;
+    padding: 5px 8px;
+    margin-left: 28px;
 
-    }
+}
 
-    .featured__button__btn {
-        padding: 4px 22px;
-        margin-left: 249px;
-        margin-top: 569px;
-    }
+.featured__button__btn {
+    padding: 4px 22px;
+    margin-left: 249px;
+    margin-top: 569px;
+}
 
-    /*FEATURED*/
+/*FEATURED*/
 
 }
 
@@ -1498,6 +1502,32 @@ body {
 
 
     /*FEATURED*/
+
+    /*TEAM*/
+
+    .team__info {
+         text-align: start;
+        margin: 14px auto;
+         width: auto;
+    }
+
+    .team__info__title {
+        font-size: 22px;
+    }
+
+    .team__info__subtitle {
+        font-size: 14px;
+    }
+
+    .team__info__subtitle__btn {
+        padding: 3.9px 29px;
+    }
+
+    .team__members__info {
+         margin: 0;
+    }
+
+    /*TEAM*/
 }
 
 
