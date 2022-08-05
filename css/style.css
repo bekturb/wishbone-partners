@@ -692,7 +692,7 @@ body {
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.4px;
-
+    background: transparent;
     color: #000000;
 }
 
@@ -755,7 +755,7 @@ body {
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.4px;
-
+    background: transparent;
     color: #000000;
     border: 1px solid #000000;
     border-radius: 14px;
@@ -856,7 +856,7 @@ body {
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.4px;
-
+    background: transparent;
     border: 1px solid #000000;
     border-radius: 14px;
 
@@ -874,14 +874,14 @@ body {
 
 
 .footer__info__logo{
-    padding-top: 62px;
+    padding-top: 53px;
     padding-left: 36px;
 }
 
 
 .footer__info__subtitle{
     margin-left: 36px;
-    padding-top: 12px;
+    padding-top: 13px;
     font-family: 'Poppins',sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1291,6 +1291,14 @@ body {
     }
 
     /*RECOMMEND*/
+
+
+    /*FOOTER*/
+    .footer__info__subtitle {
+        width: 300px;
+    }
+
+    /*FOOTER*/
 }
 
 
@@ -1414,6 +1422,12 @@ body {
 
     /*RECOMMEND*/
 
+    /*FOOTER*/
+
+
+
+    /*FOOTER*/
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -1479,6 +1493,36 @@ body {
 
 
     /*FEATURED*/
+
+
+    /*FOOTER*/
+
+    #footer {
+        height: 304px;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .footer__info{
+        text-align: center;
+    }
+
+
+    .footer__info__subtitle {
+        width: auto;
+    }
+
+    .footer__items__icon {
+        margin-right: 37px;
+        margin-top: 82px;
+    }
+
+    .footer__items{
+        text-align: center;
+    }
+    /*FOOTER*/
 }
 
 @media only screen and (max-width: 480px) {
@@ -1693,9 +1737,10 @@ body {
     .recommend__button__btn {
         margin-left: 80px;
     }
-            /*RECOMMEND*/
+
+
+    /*RECOMMEND*/
+
 }
-
-
 
 /*MEDIA*/
