@@ -803,6 +803,71 @@ body {
 
 /*TEAM*/
 
+
+/*GUEST*/
+
+#recommend{
+    height: 314px;
+    margin: 21px auto;
+    background: #CEC4BC;
+}
+
+.recommend{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recommend__guest__title{
+    margin-left: 36px;
+    margin-top: 99px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.recommend__guest__subtitle{
+    margin-left: 36px;
+    margin-top: -7px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+
+    color: #000000;
+}
+
+
+.recommend__button__btn{
+    padding: 10px 25px;
+    margin-right: 37px;
+    margin-top: 117px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.4px;
+
+    border: 1px solid #000000;
+    border-radius: 14px;
+
+    color: #000000;
+}
+
+
+
+/*GUEST*/
+
+
 /*MEDIA*/
 
 @media only screen and (max-width: 1305px) {
